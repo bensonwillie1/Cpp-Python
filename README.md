@@ -1,4 +1,4 @@
-# F1Tenth Autonomous Driving - Senior Project
+# F1Tenth Autonomous Car - Senior Project
 
 This repository contains the software and configuration files for our F1Tenth senior design project. The system enables an F1Tenth-scale autonomous car to map its environment, record waypoints, and drive autonomously using SLAM and waypoint following.
 
@@ -36,7 +36,7 @@ Our F1Tenth vehicle uses:
   Main navigation node. Follows a pre-generated CSV of waypoints using pure pursuit logic.
 
 - `pose_publisher.cpp`  
-  Publishes estimated pose based on sensor or odometry fusion (used for debugging or EKF input).
+  Publishes estimated pose based on sensor or odometry fusion (used for EKF input) courtesy of Dr. Jonathan West.
 
 - `tachometer_publisher.cpp`  
   Reads wheel encoder pulses and publishes odometry for localization and speed feedback.
