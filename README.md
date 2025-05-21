@@ -2,7 +2,7 @@
 
 This repository contains the software and configuration files for our F1Tenth senior design project. The system enables an F1Tenth-scale autonomous car to map its environment, record waypoints, and drive autonomously using SLAM and waypoint following.
 
-## 🚗 Project Overview
+## Project Overview
 
 Our F1Tenth vehicle uses:
 - **SLAM Toolbox** for map creation and localization
@@ -13,7 +13,7 @@ Our F1Tenth vehicle uses:
 
 ---
 
-## 📁 File Descriptions
+## File Descriptions
 
 ### Source Code
 
@@ -60,13 +60,10 @@ Our F1Tenth vehicle uses:
 
 - `CMakeLists.txt`  
   Build script for ROS 2 C++ nodes (`pose_publisher`, `tachometer_publisher`).
-
-- `README.md`  
-  You’re reading it!
-
+  
 ---
 
-## 🧠 System Workflow
+## System Workflow
 
 1. **Map Lap**:  
    Run `map_lap_launch.py` to manually drive the car using teleop while SLAM builds a map and waypoints are recorded.
@@ -79,21 +76,10 @@ Our F1Tenth vehicle uses:
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 - ROS 2 Humble
 - SLAM Toolbox
 - Jetson.GPIO (Jetson Nano)
 - OpenCV & NumPy (for `middleline.py`)
 - `rclpy`, `geometry_msgs`, `nav_msgs`, `std_msgs` (standard ROS 2 packages)
-
----
-
-## 🛠️ Build Instructions
-
-To compile the C++ nodes:
-
-```bash
-cd ~/ros2_ws
-colcon build --packages-select f1tenth_pkg
-source install/setup.bash
